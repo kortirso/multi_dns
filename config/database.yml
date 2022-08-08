@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 20 } %>
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: multi_dns_development
+
+test:
+  <<: *default
+  database: multi_dns_test
+
+production:
+  <<: *default
+  database: multi_dns_production
+  username: multi_dns
+  password: <%= ENV['MULTI_DNS_DATABASE_PASSWORD'] %>
