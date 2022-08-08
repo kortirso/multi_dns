@@ -2,6 +2,8 @@
 
 Rails.application.routes.draw do
   constraints(MontessoriDomain) do
-    root 'montessori/welcome#index'
+    get '', to: 'montessori/welcome#index'
   end
+
+  root 'welcome#index'
 end
