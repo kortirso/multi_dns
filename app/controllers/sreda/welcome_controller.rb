@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-module Montessori
+module Sreda
   class WelcomeController < ApplicationController
-    layout 'montessori'
+    layout 'sreda'
 
     def index; end
   end
