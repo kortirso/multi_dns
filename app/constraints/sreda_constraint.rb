@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SredaConstraint < ApplicationConstraint
+class SredaConstraint
   DOMAIN = 'sreda-lipetsk.ru'
 
   def self.matches?(request)
