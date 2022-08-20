@@ -26,6 +26,9 @@ gem 'jsbundling-rails', '~> 1.0'
 # running
 gem 'foreman'
 
+# performance metrics
+gem 'skylight'
+
 group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.12', require: false
