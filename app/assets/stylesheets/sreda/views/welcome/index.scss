@@ -39,3 +39,17 @@
     }
   }
 }
+
+@media screen and (max-width: 48rem) {
+  #index-page {
+    #images {
+      & > .flex {
+        flex-direction: column;
+      }
+
+      .flex-6, .flex-4 {
+        width: 100%;
+      }
+    }
+  }
+}

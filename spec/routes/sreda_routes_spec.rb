@@ -14,4 +14,12 @@ describe 'Routes for sreda', type: :routing do
       action:     'index'
     )
   end
+
+  it 'routes /unexisting-route to the sreda application controller' do
+    expect(get: "https://#{SredaConstraint::DOMAIN}/unexisting/route").to route_to(
+      controller: 'sreda/application',
+      action:     'not_found',
+      path:       'unexisting/route'
+    )
+  end
 end

@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 module Sreda
-  class ContactsController < ApplicationController
-    layout 'sreda'
-
+  class ContactsController < Sreda::ApplicationController
     def index; end
   end
 end
