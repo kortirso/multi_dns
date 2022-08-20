@@ -29,6 +29,9 @@ gem 'foreman'
 # performance metrics
 gem 'skylight'
 
+# sitemap generator
+gem 'sitemap_generator'
+
 group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.12', require: false

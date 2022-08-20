@@ -2,6 +2,7 @@
 
 class SredaConstraint < ApplicationConstraint
   DOMAIN = 'sreda-lipetsk.ru'
+  LAYOUT = 'sreda'
 
   def self.matches?(request)
     super(request, DOMAIN)

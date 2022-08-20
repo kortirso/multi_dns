@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Sreda
-  class WelcomeController < Sreda::ApplicationController
+  class WelcomeController < ApplicationController
     def index; end
   end
 end
