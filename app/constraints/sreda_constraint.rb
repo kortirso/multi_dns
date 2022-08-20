@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-class SredaConstraint
+class SredaConstraint < ApplicationConstraint
   DOMAIN = 'sreda-lipetsk.ru'
 
   def self.matches?(request)
-    request.domain == DOMAIN || ENV.fetch('DOMAIN', '') == DOMAIN
+    super(request, DOMAIN)
   end
 end

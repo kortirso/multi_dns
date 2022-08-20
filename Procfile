@@ -1,2 +1,2 @@
-web: bin/rails server
+web: rails s
 js: yarn build --watch

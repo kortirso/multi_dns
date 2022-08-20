@@ -11,6 +11,10 @@ development:
   <<: *default
   database: multi_dns_development
 
+local_production:
+  <<: *default
+  database: multi_dns_development
+
 test:
   <<: *default
   database: multi_dns_test

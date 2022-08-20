@@ -5,43 +5,45 @@
     <% end %>
     <nav>
       <menu class="menu flex">
+        <% if false %>
+          <li class="menu-item">
+            <div class="page-link page-link-with-dropdown">
+              О клубе
+              <ul class="page-link-dropdown">
+                <li class="menu-item">
+                  <%= link_to 'История', '#', class: 'page-link' %>
+                </li>
+                <li class="menu-item">
+                  <%= link_to 'Педагоги', '#', class: 'page-link' %>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="page-link page-link-with-dropdown">
+              Программы
+              <menu class="page-link-dropdown">
+                <li class="menu-item">
+                  <%= link_to 'Монтессори 3-6', '#', class: 'page-link' %>
+                </li>
+                <li class="menu-item">
+                  <%= link_to 'Монтессори 6-12', '#', class: 'page-link' %>
+                </li>
+                <li class="menu-item">
+                  <%= link_to 'Уники', '#', class: 'page-link' %>
+                </li>
+                <li class="menu-item">
+                  <%= link_to 'Экстерны', '#', class: 'page-link' %>
+                </li>
+                <li class="menu-item">
+                  <%= link_to 'Допзанятия', '#', class: 'page-link' %>
+                </li>
+              </menu>
+            </div>
+          </li>
+        <% end %>
         <li class="menu-item">
-          <div class="page-link page-link-with-dropdown">
-            О клубе
-            <ul class="page-link-dropdown">
-              <li class="menu-item">
-                <%= link_to 'История', '#', class: 'page-link' %>
-              </li>
-              <li class="menu-item">
-                <%= link_to 'Педагоги', '#', class: 'page-link' %>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="menu-item">
-          <div class="page-link page-link-with-dropdown">
-            Программы
-            <menu class="page-link-dropdown">
-              <li class="menu-item">
-                <%= link_to 'Монтессори 3-6', '#', class: 'page-link' %>
-              </li>
-              <li class="menu-item">
-                <%= link_to 'Монтессори 6-12', '#', class: 'page-link' %>
-              </li>
-              <li class="menu-item">
-                <%= link_to 'Уники', '#', class: 'page-link' %>
-              </li>
-              <li class="menu-item">
-                <%= link_to 'Экстерны', '#', class: 'page-link' %>
-              </li>
-              <li class="menu-item">
-                <%= link_to 'Допзанятия', '#', class: 'page-link' %>
-              </li>
-            </menu>
-          </div>
-        </li>
-        <li class="menu-item">
-          <%= link_to 'Контакты', '#', class: 'page-link' %>
+          <%= link_to 'Контакты', sreda_contacts_path, class: 'page-link' %>
         </li>
       </menu>
     </nav>
