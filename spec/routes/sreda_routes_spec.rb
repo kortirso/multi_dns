@@ -7,4 +7,11 @@ describe 'Routes for sreda', type: :routing do
       action:     'index'
     )
   end
+
+  it 'routes /contacts to the sreda contacts controller' do
+    expect(get: "https://#{SredaConstraint::DOMAIN}/contacts").to route_to(
+      controller: 'sreda/contacts',
+      action:     'index'
+    )
+  end
 end
