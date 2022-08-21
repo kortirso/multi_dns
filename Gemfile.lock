@@ -250,6 +250,8 @@ GEM
     sshkit (1.21.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    sshkit-sudo (0.1.0)
+      sshkit (~> 1.8)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
@@ -290,6 +292,7 @@ DEPENDENCIES
   simplecov
   sitemap_generator
   skylight
+  sshkit-sudo
 
 RUBY VERSION
    ruby 3.1.2p20

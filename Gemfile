@@ -50,6 +50,7 @@ group :development do
   gem 'capistrano3-puma', require: false
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rvm', require: false
+  gem 'sshkit-sudo'
 end
 
 group :test do

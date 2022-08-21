@@ -10,6 +10,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/sitemap_generator'
 require 'capistrano/puma'
+require 'sshkit/sudo'
 
 # Load the SCM plugin appropriate to your project:
 #
