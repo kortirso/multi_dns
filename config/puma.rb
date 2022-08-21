@@ -12,14 +12,14 @@ threads min_threads_count, max_threads_count
 
 # Specifies the `worker_timeout` threshold that Puma will use to wait before
 # terminating a worker in development environments.
-#
 worker_timeout 3600 if ENV.fetch('RAILS_ENV', 'development') == 'development'
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
-#
 port ENV.fetch('PORT', 5000)
 
+# rubocop: disable Style/ExpandPathArguments
 app_dir = File.expand_path('../..', __FILE__)
+# rubocop: enable Style/ExpandPathArguments
 shared_dir = "#{app_dir}/tmp"
 
 # Default to production
@@ -39,7 +39,9 @@ activate_control_app
 
 on_worker_boot do
   require 'active_record'
+  # rubocop: disable Style/RescueModifier
   ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
+  # rubocop: enable Style/RescueModifier
   ActiveRecord::Base.establish_connection(YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
 end
 
@@ -49,7 +51,7 @@ end
 # Workers do not work on JRuby or Windows (both of which do not support
 # processes).
 #
-workers ENV.fetch('WEB_CONCURRENCY') { 0 }
+workers ENV.fetch('WEB_CONCURRENCY', 0)
 
 # Use the `preload_app!` method when specifying a `workers` number.
 # This directive tells Puma to first boot the application and load code
