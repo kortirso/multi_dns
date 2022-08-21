@@ -20,7 +20,7 @@ worker_timeout 3600 if ENV.fetch('RAILS_ENV', 'development') == 'development'
 port ENV.fetch('PORT', 5000)
 
 app_dir = File.expand_path('../..', __FILE__)
-shared_dir = "#{app_dir}/shared"
+shared_dir = "#{app_dir}/tmp"
 
 # Default to production
 rails_env = ENV['RAILS_ENV'] || 'production'
