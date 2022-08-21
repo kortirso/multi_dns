@@ -23,4 +23,4 @@ production:
   <<: *default
   database: multi_dns_production
   username: multi_dns
-  password: <%= ENV['MULTI_DNS_DATABASE_PASSWORD'] %>
+  password: <%= Rails.application.credentials.database_password %>

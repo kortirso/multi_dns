@@ -32,6 +32,9 @@ gem 'skylight'
 # sitemap generator
 gem 'sitemap_generator'
 
+# errors reports
+gem 'bugsnag'
+
 group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.12', require: false
@@ -42,6 +45,10 @@ end
 group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem 'rack-mini-profiler', '>= 2.3.3'
+  gem 'capistrano', '~> 3.17', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', '~> 1.6', require: false
+  gem 'capistrano-rvm', require: false
 end
 
 group :test do
