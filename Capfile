@@ -9,6 +9,7 @@ require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/sitemap_generator'
+require 'capistrano/puma'
 
 # Load the SCM plugin appropriate to your project:
 #
@@ -20,6 +21,8 @@ require 'capistrano/sitemap_generator'
 # or
 require 'capistrano/scm/git'
 install_plugin Capistrano::SCM::Git
+install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Systemd
 
 # Include tasks from other gems included in your Gemfile
 #
