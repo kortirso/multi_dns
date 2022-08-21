@@ -4,7 +4,7 @@
       <h1>Свободная среда</h1>
     <% end %>
     <nav>
-      <menu class="menu flex">
+      <ul class="menu flex">
         <% if false %>
           <li class="menu-item">
             <div class="page-link page-link-with-dropdown">
@@ -22,7 +22,7 @@
           <li class="menu-item">
             <div class="page-link page-link-with-dropdown">
               Программы
-              <menu class="page-link-dropdown">
+              <ul class="page-link-dropdown">
                 <li class="menu-item">
                   <%= link_to 'Монтессори 3-6', '#', class: 'page-link' %>
                 </li>
@@ -38,14 +38,14 @@
                 <li class="menu-item">
                   <%= link_to 'Допзанятия', '#', class: 'page-link' %>
                 </li>
-              </menu>
+              </ul>
             </div>
           </li>
         <% end %>
         <li class="menu-item">
           <%= link_to 'Контакты', sreda_contacts_path, class: 'page-link' %>
         </li>
-      </menu>
+      </ul>
     </nav>
   </div>
 </header>

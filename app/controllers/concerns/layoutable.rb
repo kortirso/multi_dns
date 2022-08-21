@@ -10,6 +10,6 @@ module Layoutable
   private
 
   def current_site_layout
-    current_site.presence || 'application'
+    current_site || 'application'
   end
 end
