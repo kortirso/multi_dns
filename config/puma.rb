@@ -20,21 +20,21 @@ worker_timeout 3600 if ENV.fetch('RAILS_ENV', 'development') == 'development'
 port ENV.fetch('PORT', 5000)
 
 app_dir = File.expand_path('../..', __FILE__)
-tmp_dir = "#{app_dir}/tmp"
+shared_dir = "#{app_dir}/shared"
 
 # Default to production
 rails_env = ENV['RAILS_ENV'] || 'production'
 environment rails_env
 
 # Set up socket location
-bind "unix://#{tmp_dir}/sockets/puma.sock"
+bind "unix://#{shared_dir}/sockets/puma.sock"
 
 # Logging
-stdout_redirect "#{tmp_dir}/log/puma.stdout.log", "#{tmp_dir}/log/puma.stderr.log", true
+stdout_redirect "#{shared_dir}/log/puma.stdout.log", "#{shared_dir}/log/puma.stderr.log", true
 
 # Set master PID and state locations
-pidfile "#{tmp_dir}/pids/puma.pid"
-state_path "#{tmp_dir}/pids/puma.state"
+pidfile "#{shared_dir}/pids/puma.pid"
+state_path "#{shared_dir}/pids/puma.state"
 activate_control_app
 
 on_worker_boot do
