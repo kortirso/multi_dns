@@ -10,6 +10,9 @@ module Domainable
   private
 
   def current_site
-    SITES_CONSTRAINTS[request.domain] || (!Rails.env.production? && SITES_CONSTRAINTS[ENV.fetch('DOMAIN', '')])
+    value = SITES_CONSTRAINTS[request.domain]
+    return value if Rails.env.production?
+
+    value || SITES_CONSTRAINTS[ENV.fetch('DOMAIN', nil)]
   end
 end

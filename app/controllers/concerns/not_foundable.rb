@@ -14,6 +14,6 @@ module NotFoundable
   end
 
   def not_found_layout
-    (current_site || 'application')
+    current_site || 'application'
   end
 end
