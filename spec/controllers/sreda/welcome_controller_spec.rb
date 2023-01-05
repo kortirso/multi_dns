@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe Sreda::WelcomeController, type: :controller do
+describe Sreda::WelcomeController do
   describe 'GET#index' do
     it 'renders index template' do
       get :index

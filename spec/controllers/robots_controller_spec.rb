@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe RobotsController, type: :controller do
+describe RobotsController do
   describe 'GET#index' do
     it 'renders index template' do
       get :index
