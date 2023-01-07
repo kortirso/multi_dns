@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0'
@@ -46,7 +46,7 @@ group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem 'rack-mini-profiler', '>= 2.3.3'
   gem 'capistrano', '~> 3.17', require: false
-  gem 'capistrano3-puma', require: false
+  gem 'capistrano3-puma', github: 'seuros/capistrano-puma'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rvm', require: false
