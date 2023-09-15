@@ -6,10 +6,9 @@ Rails.application.routes.draw do
     get 'contacts', to: 'sreda/contacts#index', as: :sreda_contacts
   end
 
-  get 'sitemap.xml', to: 'sitemaps#index', format: :xml
-  get 'robots.txt', to: 'robots#index', format: :text
+  get 'sitemap', to: 'sitemaps#index'
+  get 'sitemap.xml', to: 'sitemaps#index'
+  get 'robots', to: 'robots#index'
 
   root 'welcome#index'
-
-  match '*path', to: 'application#not_found', via: :all
 end

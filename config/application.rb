@@ -43,7 +43,7 @@ module MultiDns
     config.generators.system_tests = nil
     config.generators do |g|
       g.test_framework :rspec, fixtures: true, views: false, view_specs: false, helper_specs: false,
-          routing_specs: false, controller_specs: true, request_specs: false
+                               routing_specs: false, controller_specs: true, request_specs: false
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
       g.stylesheets false
       g.javascripts false
@@ -51,8 +51,8 @@ module MultiDns
     end
 
     # Catch 404s
-    # config.after_initialize do |app|
-    #   app.routes.append { match '*path', to: 'application#page_not_found', via: :all }
-    # end
+    config.after_initialize do |app|
+      app.routes.append { match '*path', to: 'application#not_found', via: :all }
+    end
   end
 end
