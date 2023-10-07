@@ -6,4 +6,6 @@ class ApplicationController < ActionController::Base
   include Layoutable
 
   protect_from_forgery with: :exception
+
+  append_view_path Rails.root.join('app/views/controllers')
 end

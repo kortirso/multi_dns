@@ -5,8 +5,8 @@ require 'active_support/core_ext/integer/time'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.assets.css_compressor = :sass
-  config.assets.compile = true
+  # config.assets.css_compressor = :sass
+  # config.assets.compile = true
   config.assets.debug = true
 
   # Suppress logger output for asset requests.

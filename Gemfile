@@ -17,11 +17,10 @@ gem 'puma', '~> 6.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sassc-rails'
-
-# jsbundling
+# Js and css
 gem 'jsbundling-rails', '~> 1.0'
+gem 'sprockets-rails'
+gem 'tailwindcss-rails'
 
 # running
 gem 'foreman'
@@ -46,11 +45,9 @@ group :development do
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem 'rack-mini-profiler', '>= 2.3.3'
   gem 'capistrano', '~> 3.17', require: false
-  gem 'capistrano3-puma', github: 'seuros/capistrano-puma'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rvm', require: false
-  gem 'sshkit-sudo'
 end
 
 group :test do
