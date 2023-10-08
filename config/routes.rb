@@ -3,7 +3,6 @@
 Rails.application.routes.draw do
   constraints(SredaConstraint) do
     get '', to: 'sreda/welcome#index', as: :sreda_root
-    get 'contacts', to: 'sreda/contacts#index', as: :sreda_contacts
   end
 
   get 'sitemap', to: 'sitemaps#index'

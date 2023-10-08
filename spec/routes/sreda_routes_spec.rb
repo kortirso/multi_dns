@@ -8,13 +8,6 @@ describe 'Routes for sreda', type: :routing do
     )
   end
 
-  it 'routes /contacts to the sreda contacts controller' do
-    expect(get: "https://#{SredaConstraint::DOMAIN}/contacts").to route_to(
-      controller: 'sreda/contacts',
-      action: 'index'
-    )
-  end
-
   it 'routes /sitemap.xml to the sitemaps controller' do
     expect(get: "https://#{SredaConstraint::DOMAIN}/sitemap.xml").to route_to(
       controller: 'sitemaps',

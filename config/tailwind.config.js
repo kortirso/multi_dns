@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        '8xl': '90rem',
+      }
     },
   },
   plugins: [
