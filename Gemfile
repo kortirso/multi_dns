@@ -34,6 +34,10 @@ gem 'sitemap_generator'
 # errors reports
 gem 'bugsnag'
 
+# cache store
+gem 'redis', '~> 5.0'
+gem 'redis-rails'
+
 group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.12', require: false
