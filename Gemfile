@@ -17,8 +17,7 @@ gem 'puma', '~> 6.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# Js and css
-gem 'jsbundling-rails', '~> 1.0'
+# css
 gem 'sprockets-rails'
 gem 'tailwindcss-rails'
 
