@@ -6,13 +6,21 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 7.0'
+gem 'rack', '~> 3.0'
+gem 'rack-session', '~> 2.0'
+gem 'rackup', '~> 2.1'
+gem 'rails', '~> 7.1'
+
+# cache store
+gem 'redis', '~> 5.0'
+gem 'redis-rack', git: 'https://github.com/redis-store/redis-rack', branch: 'master'
+gem 'redis-rails', git: 'https://github.com/redis-store/redis-rails', branch: 'master'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 6.0'
+gem 'puma', '6.3.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -32,10 +40,6 @@ gem 'sitemap_generator'
 
 # errors reports
 gem 'bugsnag'
-
-# cache store
-gem 'redis', '~> 5.0'
-gem 'redis-rails'
 
 group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
