@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Sreda
+module Montessori
   class WelcomeController < ApplicationController
     def index; end
   end

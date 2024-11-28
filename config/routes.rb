@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  constraints(SredaConstraint) do
-    get '', to: 'sreda/welcome#index', as: :sreda_root
+  constraints(MontessoriConstraint) do
+    get '', to: 'montessori/welcome#index', as: :montessori_root
   end
 
   get 'sitemap', to: 'sitemaps#index'

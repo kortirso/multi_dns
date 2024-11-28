@@ -30,7 +30,7 @@
   ul#for-families li {
     @apply relative mb-2 leading-6 pl-8 bg-no-repeat;
 
-    background-image: url('sreda/icons/chevron.svg');
+    background-image: url('montessori/icons/chevron.svg');
     background-size: 1.25rem;
     background-position: left top;
   }
@@ -47,8 +47,8 @@
     @apply absolute -top-1 left-0 w-8 h-8 bg-no-repeat;
 
     content: '';
-    background-image: url('sreda/sprites.png');
-    background-size: 8rem;
+    background-image: url('montessori/sprites.png');
+    background-size: 10rem;
   }
 
   ul#contacts li.address:before {
@@ -65,5 +65,9 @@
 
   ul#contacts li.vk:before {
     background-position: -6rem 0;
+  }
+
+  ul#contacts li.instagram:before {
+    background-position: -8rem 0;
   }
 }

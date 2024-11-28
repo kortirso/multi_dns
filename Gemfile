@@ -9,7 +9,7 @@ ruby '3.2.0'
 gem 'rack', '~> 3.0'
 gem 'rack-session', '~> 2.0'
 gem 'rackup', '~> 2.1'
-gem 'rails', '~> 7.1'
+gem 'rails', '7.2.2'
 
 # cache store
 gem 'redis', '~> 5.0'
@@ -20,7 +20,7 @@ gem 'redis-rails', git: 'https://github.com/redis-store/redis-rails', branch: 'm
 gem 'pg', '~> 1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '6.3.0'
+gem 'puma', '6.5.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -45,7 +45,8 @@ group :development, :test do
   gem 'rubocop', '~> 1.23', require: false
   gem 'rubocop-performance', '~> 1.12', require: false
   gem 'rubocop-rails', '~> 2.12', require: false
-  gem 'rubocop-rspec', '~> 2.6', require: false
+  gem 'rubocop-rspec', '~> 3.0', require: false
+  gem 'rubocop-rspec_rails', '~> 2.0', require: false
 end
 
 group :development do
@@ -60,6 +61,6 @@ end
 group :test do
   gem 'database_cleaner', '~> 2.0'
   gem 'rails-controller-testing', '1.0.5'
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 7.0'
   gem 'simplecov', require: false
 end

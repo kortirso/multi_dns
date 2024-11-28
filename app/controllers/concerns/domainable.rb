@@ -4,7 +4,7 @@ module Domainable
   extend ActiveSupport::Concern
 
   SITES_CONSTRAINTS = {
-    SredaConstraint::DOMAIN => SredaConstraint::LAYOUT
+    MontessoriConstraint::DOMAIN => MontessoriConstraint::LAYOUT
   }.freeze
 
   private

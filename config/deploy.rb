@@ -51,7 +51,7 @@ set :puma_access_log, "#{shared_path}/tmp/log/puma.access.log"
 set :puma_error_log, "#{shared_path}/tmp/log/puma.error.log"
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
-set :puma_init_active_record, true  # Change to false when not using ActiveRecord
+set :puma_init_active_record, true # Change to false when not using ActiveRecord
 
 namespace :deploy do
   desc 'Restart application'
@@ -82,7 +82,7 @@ namespace :sitemaps do
     on roles(:app) do
       within release_path do
         with rails_env: fetch(:rails_env) do
-          execute :bundle, "exec rake sitemap:create CONFIG_FILE='config/sitemaps/sreda_sitemap.rb'"
+          execute :bundle, "exec rake sitemap:create CONFIG_FILE='config/sitemaps/montessori_sitemap.rb'"
         end
       end
     end
