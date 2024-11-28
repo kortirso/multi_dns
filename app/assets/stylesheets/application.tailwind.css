@@ -2,72 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  h1 {
-    @apply text-4xl leading-10 mb-4;
-  }
+h1 {
+  @apply text-4xl leading-10 mb-4;
+}
 
-  h2 {
-    @apply text-3xl leading-8 mb-4;
-  }
+h2 {
+  @apply text-3xl leading-8 mb-4;
+}
 
-  h3 {
-    @apply text-2xl leading-6 mb-4;
-  }
+h3 {
+  @apply text-2xl leading-6 mb-4;
+}
 
-  h4 {
-    @apply text-xl leading-4 mb-4;
-  }
+h4 {
+  @apply text-xl leading-4 mb-4;
+}
 
-  p {
-    @apply leading-6;
-  }
+p {
+  @apply leading-6;
+}
 
-  ul#for-families {
-    @apply list-none mb-6;
-  }
+ul#for-families {
+  @apply list-none mb-6;
+}
 
-  ul#for-families li {
-    @apply relative mb-2 leading-6 pl-8 bg-no-repeat;
+ul#for-families li {
+  @apply relative mb-2 leading-6 pl-8 bg-no-repeat;
 
-    background-image: url('montessori/icons/chevron.svg');
-    background-size: 1.25rem;
-    background-position: left top;
-  }
+  background-image: url('montessori/icons/chevron.svg');
+  background-size: 1.25rem;
+  background-position: left top;
+}
 
-  ul#contacts {
-    @apply list-none;
-  }
+ul#contacts {
+  @apply list-none;
+}
 
-  ul#contacts li {
-    @apply relative mb-4 pl-10 leading-6;
-  }
+ul#contacts li {
+  @apply relative mb-4 pl-10 leading-6;
+}
 
-  ul#contacts li:before {
-    @apply absolute -top-1 left-0 w-8 h-8 bg-no-repeat;
+ul#contacts li:before {
+  @apply absolute -top-1 left-0 w-8 h-8 bg-no-repeat;
 
-    content: '';
-    background-image: url('montessori/sprites.png');
-    background-size: 10rem;
-  }
+  content: '';
+  background-image: url('montessori/sprites.png');
+  background-size: 10rem;
+}
 
-  ul#contacts li.address:before {
-    background-position: 0;
-  }
+ul#contacts li.address:before {
+  background-position: 0;
+}
 
-  ul#contacts li.phones:before {
-    background-position: -2rem -0;
-  }
+ul#contacts li.phones:before {
+  background-position: -2rem -0;
+}
 
-  ul#contacts li.calendar:before {
-    background-position: -4rem 0;
-  }
+ul#contacts li.calendar:before {
+  background-position: -4rem 0;
+}
 
-  ul#contacts li.vk:before {
-    background-position: -6rem 0;
-  }
+ul#contacts li.vk:before {
+  background-position: -6rem 0;
+}
 
-  ul#contacts li.instagram:before {
-    background-position: -8rem 0;
+ul#contacts li.instagram:before {
+  background-position: -8rem 0;
+}
+
+#welcome-block {
+  @apply py-20 lg:py-0 px-0 md:px-20 lg:px-0;
+}
+
+#welcome-image-background {
+  @apply rounded-full;
+
+  width: 640px;
+  height: 640px;
+  background: #FDCC98;
+}
+
+#welcome-image-box {
+  @apply absolute left-0 top-0 flex flex-col justify-center;
+
+  width: 1024px;
+  height: 712px;
+}
+
+@media screen and (min-width: 1024px) {
+  #welcome-block {
+    max-width: 560px;
   }
 }
