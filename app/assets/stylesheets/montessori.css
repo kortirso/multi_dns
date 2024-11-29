@@ -1,0 +1,89 @@
+ul#for-families {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+ul#for-families li {
+  position: relative;
+  margin-bottom: .5rem;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+  background-image: url('montessori/icons/chevron.svg');
+  background-size: 1.25rem;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+ul#contacts {
+  list-style: none;
+}
+
+ul#contacts li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2.5rem;
+  line-height: 1.5rem;
+}
+
+ul#contacts li:before {
+  position: absolute;
+  top: -0.25rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  content: '';
+  background-image: url('montessori/sprites.png');
+  background-size: 10rem;
+  background-repeat: no-repeat;
+}
+
+ul#contacts li.address:before {
+  background-position: 0;
+}
+
+ul#contacts li.phones:before {
+  background-position: -2rem -0;
+}
+
+ul#contacts li.calendar:before {
+  background-position: -4rem 0;
+}
+
+ul#contacts li.vk:before {
+  background-position: -6rem 0;
+}
+
+ul#contacts li.instagram:before {
+  background-position: -8rem 0;
+}
+
+#welcome-block {
+  @apply py-20 lg:py-0 px-0 md:px-20 lg:px-0;
+
+  padding: 5rem 0;
+}
+
+#welcome-image-background {
+  width: 640px;
+  height: 640px;
+  background: #FDCC98;
+  border-radius: 9999px;
+}
+
+#welcome-image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 712px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  #welcome-block {
+    max-width: 560px;
+    padding: 0;
+  }
+}
