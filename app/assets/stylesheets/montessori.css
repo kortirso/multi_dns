@@ -14,18 +14,18 @@ ul.list li {
   background-repeat: no-repeat;
 }
 
-ul#contacts {
+ul.contacts {
   list-style: none;
 }
 
-ul#contacts li {
+ul.contacts li {
   position: relative;
   margin-bottom: 1rem;
   padding-left: 2.5rem;
   line-height: 1.5rem;
 }
 
-ul#contacts li:before {
+ul.contacts li:before {
   position: absolute;
   top: -0.25rem;
   left: 0;
@@ -37,23 +37,23 @@ ul#contacts li:before {
   background-repeat: no-repeat;
 }
 
-ul#contacts li.address:before {
+ul.contacts li.address:before {
   background-position: 0;
 }
 
-ul#contacts li.phones:before {
+ul.contacts li.phones:before {
   background-position: -2rem -0;
 }
 
-ul#contacts li.calendar:before {
+ul.contacts li.calendar:before {
   background-position: -4rem 0;
 }
 
-ul#contacts li.vk:before {
+ul.contacts li.vk:before {
   background-position: -6rem 0;
 }
 
-ul#contacts li.instagram:before {
+ul.contacts li.instagram:before {
   background-position: -8rem 0;
 }
 
