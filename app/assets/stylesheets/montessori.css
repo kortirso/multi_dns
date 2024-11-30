@@ -1,9 +1,9 @@
-ul#for-families {
+ul.list {
   list-style: none;
   margin-bottom: 1.5rem;
 }
 
-ul#for-families li {
+ul.list li {
   position: relative;
   margin-bottom: .5rem;
   padding-left: 2rem;
@@ -58,9 +58,7 @@ ul#contacts li.instagram:before {
 }
 
 #welcome-block {
-  @apply py-20 lg:py-0 px-0 md:px-20 lg:px-0;
-
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 #welcome-image-background {
