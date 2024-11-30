@@ -24,6 +24,13 @@ describe 'Routes for montessori', type: :routing do
     )
   end
 
+  it 'routes /favicon-32x32.png to the icons controller' do
+    expect(get: "https://#{MontessoriConstraint::DOMAIN}/favicon-32x32.png").to route_to(
+      controller: 'icons',
+      action: 'index'
+    )
+  end
+
   it 'routes /unexisting-route to the montessori application controller' do
     expect(get: "https://#{MontessoriConstraint::DOMAIN}/unexisting/route").to route_to(
       controller: 'application',
