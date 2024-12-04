@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   get 'sitemap', to: 'sitemaps#index'
   get 'sitemap.xml', to: 'sitemaps#index'
   get 'robots', to: 'robots#index'
+
   get 'apple-touch-icon.png', to: 'icons#index'
   get 'favicon-32x32.png', to: 'icons#index'
+  get 'favicon.ico', to: 'icons#index'
 
   root 'welcome#index'
 end
