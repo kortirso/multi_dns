@@ -10,7 +10,7 @@ class MultiDnsCookieStore < ActionDispatch::Session::CookieStore
   end
 
   # Overrides
-  def set_cookie(request, session_id, cookie)
+  def set_cookie(request, _session_id, cookie)
     cookie_jar(request)[cookie_key(request)] = cookie
   end
 
