@@ -7,7 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rack', '~> 3.0'
 gem 'rack-session', '~> 2.0'
 gem 'rackup', '~> 2.1'
-gem 'rails', '7.2.2'
+gem 'rails', '< 8.0'
 
 # cache store
 gem 'redis', '~> 5.0'
