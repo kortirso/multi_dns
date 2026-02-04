@@ -1,3 +1,5 @@
 ---
 # The authentication token for the application.
 authentication: <%= Rails.application.credentials.skylight_license_key %>
+ignored_endpoints:
+  - ApplicationController#not_found
