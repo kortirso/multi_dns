@@ -6,19 +6,6 @@
   font-weight: 500;
 }
 
-.line-indicator {
-  position: absolute;
-  bottom: .5rem;
-  right: 0;
-  width: 8rem;
-  display: none;
-}
-
-.line-indicator.reverse {
-  bottom: 1.25rem;
-  rotate: 180deg;
-}
-
 #welcome-block {
   padding: 0;
 }
