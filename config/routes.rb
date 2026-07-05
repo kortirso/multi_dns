@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   constraints(MontessoriConstraint) do
     get '', to: 'montessori/welcome#index', as: :montessori_root
   end
+  constraints(PullkeeperConstraint) do
+    get '', to: 'pullkeeper/welcome#index', as: :pullkeeper_root
+  end
 
   get 'sitemap', to: 'sitemaps#index'
   get 'sitemap.xml', to: 'sitemaps#index'

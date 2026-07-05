@@ -5,6 +5,7 @@ class MultiDnsCookieStore < ActionDispatch::Session::CookieStore
   def cookie_key(request)
     case request.domain
     when 'montessori-lipetsk.ru' then :_montessori_lipetsk_session
+    when 'pullkeeper.dev' then :_pullkeeper_session
     else @key
     end
   end

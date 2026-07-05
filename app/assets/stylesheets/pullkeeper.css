@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&display=swap');
+
+.simple-link {
+  color: #EC7104;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.line-indicator {
+  position: absolute;
+  bottom: .5rem;
+  right: 0;
+  width: 8rem;
+  display: none;
+}
+
+.line-indicator.reverse {
+  bottom: 1.25rem;
+  rotate: 180deg;
+}
+
+#welcome-block {
+  padding: 0;
+}
+
+#welcome-image-background {
+  width: 640px;
+  height: 640px;
+  background: #FDCC98;
+  border-radius: calc(infinity * 1px);
+}
+
+#welcome-image-box {
+  position: absolute;
+  left: 8rem;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 920px;
+  height: 640px;
+}
+
+@media screen and (min-width: 1024px) {
+  .line-indicator {
+    display: inline-block;
+  }
+
+  #welcome-block {
+    max-width: 560px;
+  }
+}

@@ -4,7 +4,8 @@ module Domainable
   extend ActiveSupport::Concern
 
   SITES_CONSTRAINTS = {
-    MontessoriConstraint::DOMAIN => MontessoriConstraint::LAYOUT
+    MontessoriConstraint::DOMAIN => MontessoriConstraint::LAYOUT,
+    PullkeeperConstraint::DOMAIN => PullkeeperConstraint::LAYOUT
   }.freeze
 
   private
